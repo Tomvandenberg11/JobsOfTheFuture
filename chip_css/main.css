@@ -1,0 +1,220 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+
+@font-face {
+	font-family: h1Font;
+	src: url(../fonts/BebasNeue.otf);
+}
+
+#inleiding {
+	height: 100vh;
+}
+
+h1 {
+	font-family: h1Font;
+	text-align: center;
+	color: #2C3E50;
+	font-weight: 500;
+}
+	
+@-webkit-keyframes mover {
+	0% { transform: translateY(20); }
+	100% { transform: translateY(-30px); }
+}
+
+@keyframes mover {
+	0% { transform: translateY(20); }
+	100% { transform: translateY(-30px); }
+}
+
+#chip {
+	display: block;
+	margin: 0 auto;
+	max-width: 12em;
+	margin-top: 3em;
+	
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	background-color: #003C00;
+	border: none;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	font-size: 16px;
+	margin: 0 auto;
+	margin-top: 2em;
+}
+
+#ontstaan {
+	background-color: rgba(52, 152, 219, .1);
+	height: 100vh;
+	overflow: hidden;
+}
+
+#postbode {
+	display: block;
+	margin: 0 auto;
+	width: 95%;
+	margin-top: 2em;
+}
+
+.tekst {
+	max-width: 60%;
+	display: block;
+	margin: 0 auto;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	color: #2C3E50;
+	font-size: 1em;
+	margin-top: 5em;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	color: #2C3E50;
+	font-size: 1em;
+	font-weight: 100;
+	display: block;
+	margin: 0 auto;
+}
+
+footer {
+	height: 50px;
+	background-color: #333;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	position: fixed;
+	opacity: .6;
+}
+
+#house {
+	max-width: 31px;
+	margin: 10px;
+}
+
+#arrow {
+	max-width: 20px;
+	margin: 10px;
+	float: right;
+}
+
+#oorzaak {
+	height: 100vh;
+	overflow: hidden;
+}
+
+#pc {
+	display: block;
+	margin: 0 auto;
+	width: auto;
+	margin-top: 3em;
+}
+
+#oplossing {
+	background-color: rgba(52, 152, 219, .1);
+	height: 100vh;
+	overflow: hidden;
+}
+
+@keyframes slideInUp {
+	from {
+		transform: translate3d(0, -215%, 0);
+		visibility: visible;
+		opacity: .1;
+	}
+
+	60% {
+		transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+
+	to {
+		transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+}
+
+.slideInUp {
+	animation-name: slideInUp;
+}
+
+#lamp {
+	display: block;
+	margin: 0 auto;
+	width: auto;
+	margin-top: 5em;
+	animation: slideInUp normal 5s infinite ease-in-out;
+	-webkit-animation: slideInUp normal 5s infinite ease-in-out;
+	-moz-animation: slideInUp normal 5s infinite ease-in-out;
+	-o-animation: slideInUp normal 5s infinite ease-in-out;
+	transition: all 5s ease-in-out;
+	-webkit-transition: all 5s ease-in-out;
+	-moz-transition: all 5s ease-in-out;
+	-o-transition: all 5s ease-in-out;
+}
+
+
+
+#voordelen {
+	height: 100vh;
+	overflow: hidden;
+}
+
+#juichen {
+	display: block;
+	margin: 0 auto;
+	width: auto;
+	margin-top: 5em;
+}
+
+#ziek {
+	display: block;
+	margin: 0 auto;
+	width: 90%;
+	height: 40vh;
+	margin-top: 5em;
+}
+
+#nadelen {
+	background-color: rgba(52, 152, 219, .1);
+	height: 100vh;
+	overflow: hidden;
+}
+
+#boos {
+	display: block;
+	margin: 0 auto;
+	width: auto;
+	margin-top: 5em;
+}
+
+#banen {
+	height: 100vh;
+	overflow: hidden;
+}
+
+#kantoor {
+	display: block;
+	margin: 0 auto;
+	width: auto;
+	margin-top: 5em;
+}

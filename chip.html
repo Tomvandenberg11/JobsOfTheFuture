@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chip</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="chip_css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		jQuery(document).ready(function() {
+			var offset = 220;
+			var duration = 800;
+			jQuery(window).scroll(function() {
+				if (jQuery(this).scrollTop() > offset) {
+					jQuery('#arrow').fadeIn(duration);
+				} else {
+					jQuery('#arrow').fadeOut(duration);
+				}
+			});
+
+			jQuery('#arrow').click(function(event) {
+				event.preventDefault();
+				jQuery('html, body').animate({scrollTop: 0}, duration);
+				return false;
+			})
+		});
+
+		$(document).ready(function(){
+			
+			$("a").on('click', function(event) {
+
+				if (this.hash !== "") {
+					event.preventDefault();
+
+					var hash = this.hash;
+
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function(){
+
+						window.location.hash = hash;
+					});
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+
+	<div id="inleiding">
+		<br><br>
+		<h1>E-HEALTH EN BIOTECH<br>MAKEN DE ZORGKOSTEN<br>BEHEERSBAAR.</h1> 
+		<img id="chip" alt="chip" src="img/Group%201414.svg">
+		<a href="#ontstaan"><button>Bekijk artikel</button></a>
+		<footer>
+			<a href="index.html"><img id="house" src="img/Group%201550.svg"></a>
+			<a href="drone.html"><img id="arrow" src="img/Group%201552.svg"></a>
+		</footer>
+	</div>
+
+	<div id="ontstaan">
+		<img id="postbode" alt="postbode" src="img/Group%201703.svg">
+		<div class="tekst">
+			<h2>1. Normale afspraak maken bij de dokter</h2>
+			<p>Tegenwoordig maakt iedereen zelf een afspraak met de dokter als je ziek bent. Maar wat nou als je niet door heb dat je ziek bent?</p>
+		</div>
+	</div>
+
+	<div id="oorzaak">
+		<img id="pc" alt="pc" src="img/Group%201643.svg">
+		<div class="tekst">
+			<h2>2. Nadelen van zelf afspraak maken</h2>
+			<p>Je weet niet altijd dat je ziek bent dus dan maak je de afspraak niet. Veel mensen zijn bang voor de dokter of durven niet te bellen.</p>
+		</div>
+	</div>
+
+	<div id="oplossing">
+		<br><br>
+		<img id="lamp" alt="lamp" src="img/Group%20129.png">
+		<div class="tekst">
+			<h2>3. Introduceren chip</h2>
+			<p>De oplossing daarvoor is een lichaamschip. De chip meet je lichaam op en kan zien wanneer er iets niet goed gaat. De gegevens worden gestuurd naar je dokter en hij krijgt dan een melding. De dokter gaat dan een afspraak maken met jou.</p>
+		</div>
+	</div>
+
+	<div id="voordelen">
+		<img id="ziek" alt="ziek" src="img/Group%201865.svg">
+		<div class="tekst">
+			<h2>4. Voordelen chip</h2>
+			<p>De voordelen van de chip zijn dat je niet zelf meer een afspraak hoeft te maken al durf je dat niet. En de chip kan zien wanneer er iets niet goed met je gaat al heb je zelf niet door.</p>
+		</div>
+	</div>
+
+	<div id="nadelen"><br>
+		<img id="boos" alt="boos" src="img/Group%201792.svg">
+		<div class="tekst">
+			<h2>5. Nadelen chip</h2>
+			<p>Alle gegevens worden gestuurd via het internet. Er bestaat dus een kans dat het systeem gehackt kan worden.</p>
+		</div>
+	</div>
+
+	<div id="banen">
+		<br><br><br><br>
+		<img id="kantoor" alt="kantoor" src="img/Group%201866.svg">
+		<div class="tekst">
+			<h2>6. Nieuwe jobs (chipmaker, chip tester, ICT’er)</h2>
+			<p>De chips moeten natuurlijk ook gemaakt worden dus er komen banen bij zoals een chipmaker en tester. En de ICT’ers worden belangrijker dan ooit.</p>
+		</div>
+	</div>
+</body>
+
+</html>

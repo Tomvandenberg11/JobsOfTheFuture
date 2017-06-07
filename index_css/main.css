@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: h1Font;
+    src: url(../fonts/BebasNeue.otf);
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    height: 100vh;
+}
+
+h1 {
+    font-family: h1Font;
+    text-align: center;
+    color: #2C3E50;
+    font-size: 3em;
+}
+
+#menu {
+    margin-top: 1em;
+}
+
+img {
+    max-width: 11em;
+}
+
+.giants {
+    display: inline-block;
+    float: left;
+    width: auto;
+}
+
+.renewal {
+    display: inline-block;
+    float: right;
+    width: auto;
+}
+
+.alliances {
+    display: inline-block;
+    float: left;
+    width: auto;
+    margin-top: 1.5em;
+}
+
+.local {
+     display: inline-block;
+     float: right;
+     width: auto;
+    margin-top: 1.5em;
+ }
